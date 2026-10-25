@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>나의 첫 프로젝트</title>
+    <!-- 휴대폰에서도 화면 너비가 올바르게 표시되도록 설정한다. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        /* 브라우저가 기본으로 넣는 바깥 여백을 제거한다. */
+        margin: 0;
+
+        /* 화면 높이를 최소한 화면 전체 크기로 만든다. */
+        min-height: 100vh;
+
+        /* 내부 요소를 자유롭게 배치할 수 있는 Flex 구조로 만든다. */
+        display: flex;
+
+        /* 가로 방향 가운데 정렬 */
+        justify-content: center;
+
+        /* 세로 방향 가운데 정렬 */
+        align-items: center;
+
+        background-color: #f5f5f5;
+        font-family: Arial, sans-serif;
+        text-align: center;
+
+        /* 작은 화면에서 카드가 화면 끝에 붙지 않게 한다. */
+        padding: 24px;
+        box-sizing: border-box;
+      }
+      .card {
+        /* 카드 배경 */
+        background-color: white;
+
+        /* 가능한 공간을 사용하되 560px보다 커지지 않는다. */
+        width: 100%;
+        max-width: 560px;
+
+        /* 카드 안쪽 여백 */
+        padding: 48px 32px;
+
+        /* 모서리를 둥글게 만든다. */
+        border-radius: 20px;
+
+        /* 카드 뒤에 그림자를 만든다. */
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+
+        /* padding이 전체 너비를 늘리지 않도록 계산한다. */
+        box-sizing: border-box;
+      }
+      h1 {
+        color: #222;
+      }
+
+      p {
+        color: #666;
+      }
+
+      button {
+        background-color: #222;
+        color: white;
+        border: none;
+        padding: 12px 24px;
+        border-radius: 8px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background-color: #555;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 이 페이지의 핵심 내용을 하나의 카드로 묶는다. -->
+    <main class="card">
+      <h1>안녕하세요!</h1>
+
+      <p id="statusMessage">
+        저는 오늘 웹 개발을 시작했습니다. 부자가 되겠습니다.
+      </p>
+
+      <button id="moneyButton">돈벌기</button>
+    </main>
+
+    <script>
+      // HTML에서 버튼과 문장을 찾는다.
+      const moneyButton = document.querySelector("#moneyButton");
+      const statusMessage = document.querySelector("#statusMessage");
+
+      // 버튼을 클릭하면 문장과 버튼 글자를 변경한다.
+      moneyButton.addEventListener("click", function () {
+        statusMessage.textContent = "첫 번째 홈페이지 제작을 시작했습니다!";
+        moneyButton.textContent = "시작 완료!";
+      });
+    </script>
+  </body>
+</html>
