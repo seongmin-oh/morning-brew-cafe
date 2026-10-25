@@ -31,9 +31,27 @@ const menus = [
     category: "coffee",
   },
   {
+    name: "모카라테",
+    description: "진한 에스프레소와 달콤한 초콜릿이 어우러진 라테",
+    price: 5500,
+    category: "coffee",
+  },
+  {
     name: "딸기라테",
     description: "신선한 딸기와 우유로 만든 음료",
     price: 5500,
+    category: "nonCoffee",
+  },
+  {
+    name: "고구마라테",
+    description: "달콤한 고구마와 부드러운 우유로 만든 포근한 라테",
+    price: 5500,
+    category: "nonCoffee",
+  },
+  {
+    name: "말차라테",
+    description: "쌉싸름한 말차와 고소한 우유가 조화로운 라테",
+    price: 5800,
     category: "nonCoffee",
   },
 ];
