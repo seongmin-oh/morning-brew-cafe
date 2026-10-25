@@ -55,7 +55,18 @@ body {
 .navigation a:hover {
   color: #a8643a;
 }
+/* 문의 링크를 버튼처럼 강조한다. */
+.navigation .contact-link {
+  padding: 9px 14px;
+  border-radius: 8px;
+  background-color: #5b3523;
+  color: white;
+}
 
+.navigation .contact-link:hover {
+  background-color: #7b4a30;
+  color: white;
+}
 /* 홈페이지에서 가장 먼저 보이는 소개 영역 */
 .hero {
   min-height: 70vh;
